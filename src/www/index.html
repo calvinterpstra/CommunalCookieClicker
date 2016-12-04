@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Communal Cookie Clicker</title>
+    <meta name="description" content="an online communal cookie clicker using React, Webpack, and Material UI">
+
+    <!-- Use minimum-scale=1 to enable GPU rasterization -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+</head>
+
+<body>
+    <div id="app"></div>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB1imrxl0LEV0ty2aR5QH1sZCQ6b5wWRw0",
+      authDomain: "communalcookieclicker-59b27.firebaseapp.com",
+      databaseURL: "https://communalcookieclicker-59b27.firebaseio.com",
+      storageBucket: "communalcookieclicker-59b27.appspot.com",
+      messagingSenderId: "534493464428"
+    };
+    firebase.initializeApp(config);
+  </script>
+    <!-- This script adds the Roboto font to our project. For more detail go to this site:  http://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,300,500 -->
+    <script>
+    var WebFontConfig = {
+      google: { families: [ 'Roboto:400,300,500:latin' ] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+    <script src="/app.js"></script>
+</body>
+
+</html>
